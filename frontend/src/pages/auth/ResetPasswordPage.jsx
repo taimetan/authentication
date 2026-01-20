@@ -31,7 +31,7 @@ const ResetPasswordPage = () => {
         navigate("/login");
       }, 2000);
     } catch (error) {
-      console.error(error);
+      return error;
     //   toast.error(error.message || "Error resetting password");
     }
   };
