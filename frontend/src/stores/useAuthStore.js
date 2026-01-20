@@ -1,7 +1,8 @@
 import { create } from "zustand";
 import axios from "axios";
 
-const API_URL = import.meta.env.MODE === "development" ? "https://authentication-production-e10c.up.railway.app" : "/api/v1/auth";
+// const API_URL = import.meta.env.MODE === "development" ? "https://authentication-production-e10c.up.railway.app" : "/api/v1/auth";
+const API_URL = import.meta.env.VITE_API_URL;
 
 axios.defaults.withCredentials = true;
 
