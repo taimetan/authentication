@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 3000;
 
 app.use(
   cors({
-    origin: "https://authentication-five-liart.vercel.app",
+    origin: process.env.CLIENT_URL,
     credentials: true,
   })
 );
